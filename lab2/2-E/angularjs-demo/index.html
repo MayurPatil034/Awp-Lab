@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS Data Binding Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+</head>
+
+<body ng-controller="welcomeController">
+    <div class="container">
+        <h2>AngularJS Two-Way Data Binding</h2>
+
+        <div>
+            <label>Enter Your Name:</label>
+            <input type="text" ng-model="userName" placeholder="Type your name here...">
+        </div>
+
+        <div class="output">
+            <span ng-bind="welcomeMessage"></span>
+        </div>
+
+        <div class="info">
+            <strong>Live Update:</strong> You typed: <span ng-bind="userName"></span>
+        </div>
+    </div>
+
+    <script>
+        // Define AngularJS Module
+        var app = angular.module('myApp', []);
+
+        // Define Controller
+        app.controller('welcomeController', function ($scope) {
+            $scope.userName = 'Guest';
+
+            // Watch for changes in userName
+            $scope.$watch('userName', function () {
+                $scope.welcomeMessage = 'Welcome, ' + $scope.userName + '!';
+            });
+
+            // Initialize welcome message
+            $scope.welcomeMessage = 'Welcome, Guest!';
+        });
+    </script>
+</body>
+
+</html>

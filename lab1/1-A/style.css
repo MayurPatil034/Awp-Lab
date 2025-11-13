@@ -1,0 +1,108 @@
+/* --- Basic Setup --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.resume-container {
+    max-width: 800px;
+    /* Standard resume width */
+    margin: 20px auto;
+    /* Centers the resume */
+    padding: 30px;
+    background-color: #ffffff;
+    /* White paper background */
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* Subtle shadow */
+}
+
+/* --- Header --- */
+.header {
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    margin: 0;
+    color: #2c3e50;
+    /* Dark blue-gray */
+    font-size: 2.5em;
+}
+
+.header h2 {
+    margin: 5px 0 15px;
+    color: #7f8c8d;
+    /* Muted gray */
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* --- Main Content Sections --- */
+.section {
+    margin-bottom: 25px;
+}
+
+.section h3 {
+    font-size: 1.4em;
+    color: #3498db;
+    /* Accent color (blue) */
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* --- Individual Items (for Education, Projects, Experience) --- */
+.item {
+    margin-bottom: 15px;
+}
+
+.item h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+.item p,
+.item ul {
+    margin: 0;
+    font-size: 0.95em;
+}
+
+.item ul {
+    padding-left: 20px;
+    /* Indent bullet points */
+    margin-top: 5px;
+}
+
+/* --- Skills List Styling --- */
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.skills-list strong {
+    display: inline-block;
+    width: 120px;
+    /* Aligns the skill categories */
+    color: #555;
+    font-weight: 600;
+}
